@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description" content="MadaTrip Planner - L'expert du voyage sur mesure à Madagascar.">
+    <meta name="keywords" content="Madagascar, voyage luxe, circuits privés, randonnées, MadaTrip">
+    <meta name="author" content="MadaTrip Planner">
+    <title>MadaTrip Planner | Voyages d'exception à Madagascar</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Swiper JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="font-jakarta bg-white">
+
+    <!-- Scroll Progress -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- ==================== NAVBAR ==================== -->
+    <nav id="navbar" class="fixed w-full z-50">
+        <div class="container mx-auto px-6 lg:px-12">
+            <div class="flex items-center justify-between">
+                <div class="hidden lg:flex space-x-8">
+                    <a href="index.html" class="nav-link">ACCUEIL</a>
+                    <a href="about.html" class="nav-link">À PROPOS</a>
+                    <a href="circuits.html" class="nav-link">CIRCUITS</a>
+                </div>
+                
+                <a href="index.html" class="logo-link">
+                    <img src="assets/images/madatriplogo.png" alt="MadaTrip Planner" class="logo-navbar">
+                </a>
+                
+                <div class="hidden lg:flex space-x-8">
+                    <a href="services.html" class="nav-link">SERVICES</a>
+                    <a href="gallery.html" class="nav-link">GALERIE</a>
+                    <a href="contact.html" class="nav-link">CONTACT</a>
+                </div>
+                
+                <button id="menuBtn" class="lg:hidden text-dark text-2xl focus:outline-none">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        <div class="nav-border"></div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="mobile-menu fixed inset-0 bg-white z-50 transform -translate-x-full transition-transform duration-500 lg:hidden">
+        <div class="flex justify-end p-6">
+            <button id="closeMenu" class="text-dark text-3xl"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="flex flex-col items-center justify-center h-full space-y-8">
+            <img src="assets/images/madatriplogo.png" alt="Logo" class="h-24 w-auto mb-4">
+            <a href="index.html" class="text-2xl text-dark/80 hover:text-primary transition">Accueil</a>
+            <a href="about.html" class="text-2xl text-dark/80 hover:text-primary transition">À propos</a>
+            <a href="circuits.html" class="text-2xl text-dark/80 hover:text-primary transition">Circuits</a>
+            <a href="services.html" class="text-2xl text-dark/80 hover:text-primary transition">Services</a>
+            <a href="gallery.html" class="text-2xl text-dark/80 hover:text-primary transition">Galerie</a>
+            <a href="contact.html" class="text-2xl text-dark/80 hover:text-primary transition">Contact</a>
+        </div>
+    </div>
+
+    <!-- ==================== HERO SECTION ==================== -->
+    <section class="hero-section">
+        <div class="hero-container">
+            <div class="hero-content" data-aos="fade-left" data-aos-duration="1000">
+                <span class="hero-badge">L'Art du Voyage</span>
+                <h1 class="hero-title">
+                    Explorez l'<span class="text-rose-hero">Île Rouge</span><br>autrement
+                </h1>
+                <div class="hero-divider"></div>
+                <p class="hero-description">
+                    Des expériences uniques, des paysages époustouflants<br>
+                    et des séjours sur mesure au cœur de Madagascar.
+                </p>
+                <div class="hero-buttons">
+                    <a href="circuits.html" class="btn-primary">Découvrir</a>
+                    <a href="booking.html" class="btn-outline">Planifier</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <div class="scroll-wheel">
+                <div class="scroll-dot"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== PRÉSENTATION ==================== -->
+    <section class="section-presentation">
+        <div class="container-custom">
+            <div class="presentation-grid">
+                <div class="presentation-image" data-aos="fade-right">
+                    <div class="image-wrapper">
+                        <img src="assets/images/madatriplogo.png" alt="Madagascar nature">
+                    </div>
+                    <div class="image-decoration"></div>
+                </div>
+                <div class="presentation-text" data-aos="fade-left">
+                    <span class="section-badge">Qui sommes-nous</span>
+                    <h2 class="section-title">L'expertise locale<br>au service de l'exception</h2>
+                    <div class="section-divider"></div>
+                    <p class="section-text">
+                        Depuis plus d'une décennie, MadaTrip Planner conçoit des voyages d'exception qui révèlent la magie authentique de Madagascar. 
+                        Notre équipe de passionnés met son expertise locale et son amour du territoire pour créer des itinéraires sur mesure, 
+                        alliant aventure, luxe discret et immersion culturelle.
+                    </p>
+                    <p class="section-text">
+                        Chaque voyage est une œuvre unique, pensée dans les moindres détails pour vous offrir des émotions inoubliables.
+                    </p>
+                    <a href="about.html" class="link-arrow">Découvrir notre histoire <i class="fas fa-long-arrow-alt-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== SERVICES ==================== -->
+    <section class="section-services">
+        <div class="container-custom">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-badge">Notre Savoir-Faire</span>
+                <h2 class="section-title">Des services d'exception</h2>
+                <div class="section-divider-center"></div>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon"><i class="fas fa-umbrella-beach"></i></div>
+                    <h3 class="service-title">Voyages sur mesure</h3>
+                    <p class="service-text">Des itinéraires 100% personnalisés, adaptés à vos envies.</p>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon"><i class="fas fa-hiking"></i></div>
+                    <h3 class="service-title">Randonnées exclusives</h3>
+                    <p class="service-text">Guidées par des experts locaux sur des sentiers préservés.</p>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-icon"><i class="fas fa-route"></i></div>
+                    <h3 class="service-title">Circuits privés</h3>
+                    <p class="service-text">Découvrez les trésors cachés en toute intimité.</p>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-icon"><i class="fas fa-concierge-bell"></i></div>
+                    <h3 class="service-title">Assistance premium</h3>
+                    <p class="service-text">Un accompagnement dédié 24h/24 avant et pendant votre séjour.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CIRCUITS POPULAIRES ==================== -->
+    <section class="section-circuits">
+        <div class="container-custom">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-badge">Nos Incontournables</span>
+                <h2 class="section-title">Circuits populaires</h2>
+                <div class="section-divider-center"></div>
+            </div>
+            
+            <div class="circuits-grid">
+                <div class="circuit-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="circuit-image">
+                        <img src="assets/images/tsingycard.jpg" alt="Tsingy">
+                        <div class="circuit-overlay"></div>
+                        <div class="circuit-duration">
+                            <i class="far fa-clock"></i>
+                            <span>8 jours</span>
+                        </div>
+                    </div>
+                    <div class="circuit-info">
+                        <h3 class="circuit-title">Tsingy & Baobabs</h3>
+                        <p class="circuit-desc">Exploration des formations calcaires uniques et de l'allée des baobabs.</p>
+                        <div class="circuit-price-group">
+                            <span class="circuit-price-label">À partir de</span>
+                            <span class="circuit-price-light">1 290€</span>
+                        </div>
+                        <div class="circuit-btn-wrapper">
+                            <a href="circuit-details.html" class="btn-circuit-details">
+                                <span>Découvrir</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="circuit-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="circuit-image">
+                        <img src="assets/images/sifakacard.jpg" alt="Trek">
+                        <div class="circuit-overlay"></div>
+                        <div class="circuit-duration">
+                            <i class="far fa-clock"></i>
+                            <span>6 jours</span>
+                        </div>
+                    </div>
+                    <div class="circuit-info">
+                        <h3 class="circuit-title">Trek & Lémuriens</h3>
+                        <p class="circuit-desc">Randonnée dans le parc national de Ranomafana, à la rencontre des lémuriens.</p>
+                        <div class="circuit-price-group">
+                            <span class="circuit-price-label">À partir de</span>
+                            <span class="circuit-price-light">890€</span>
+                        </div>
+                        <div class="circuit-btn-wrapper">
+                            <a href="circuit-details.html" class="btn-circuit-details">
+                                <span>Découvrir</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="circuit-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="circuit-image">
+                        <img src="assets/images/plagecard2.jpg" alt="Nosy Be">
+                        <div class="circuit-overlay"></div>
+                        <div class="circuit-duration">
+                            <i class="far fa-clock"></i>
+                            <span>10 jours</span>
+                        </div>
+                    </div>
+                    <div class="circuit-info">
+                        <h3 class="circuit-title">Nosy Be & Îles</h3>
+                        <p class="circuit-desc">Séjour balnéaire de luxe, plages paradisiaques et snorkeling.</p>
+                        <div class="circuit-price-group">
+                            <span class="circuit-price-label">À partir de</span>
+                            <span class="circuit-price-light">1 490€</span>
+                        </div>
+                        <div class="circuit-btn-wrapper">
+                            <a href="circuit-details.html" class="btn-circuit-details">
+                                <span>Découvrir</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12" data-aos="fade-up">
+                <a href="circuits.html" class="btn-outline-dark">Voir tous nos circuits <i class="fas fa-arrow-right ml-2"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== WHY CHOOSE US ==================== -->
+    <section class="section-why">
+        <div class="container-custom">
+            <div class="why-grid">
+                <div class="why-text" data-aos="fade-right">
+                    <span class="section-badge-white">Pourquoi nous choisir</span>
+                    <h2 class="why-title">L'excellence<br>à chaque étape</h2>
+                    <div class="why-divider"></div>
+                    
+                    <div class="why-items">
+                        <div class="why-item">
+                            <div class="why-icon"><i class="fas fa-leaf"></i></div>
+                            <div>
+                                <h3 class="why-item-title">Écotourisme responsable</h3>
+                                <p class="why-item-text">Nous respectons et préservons les écosystèmes uniques de Madagascar.</p>
+                            </div>
+                        </div>
+                        <div class="why-item">
+                            <div class="why-icon"><i class="fas fa-users"></i></div>
+                            <div>
+                                <h3 class="why-item-title">Équipe locale passionnée</h3>
+                                <p class="why-item-text">Des guides experts qui partagent leur amour de l'île.</p>
+                            </div>
+                        </div>
+                        <div class="why-item">
+                            <div class="why-icon"><i class="fas fa-gem"></i></div>
+                            <div>
+                                <h3 class="why-item-title">Service personnalisé</h3>
+                                <p class="why-item-text">Chaque voyage est unique et conçu sur mesure pour vous.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="why-images" data-aos="fade-left">
+                    <div class="images-grid">
+                        <img src="assets/images/walecard.jpg" alt="Madagascar" class="img-1">
+                        <img src="assets/images/artcard.jpg" alt="Madagascar" class="img-2">
+                        <img src="assets/images/randocard.jpg" alt="Madagascar" class="img-3">
+                        <img src="assets/images/baobacard.jpg" alt="Madagascar" class="img-4">
+                    </div>
+                    <div class="images-decoration"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== TESTIMONIALS ==================== -->
+    <section class="section-testimonials">
+        <div class="container-custom">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-badge">Témoignages</span>
+                <h2 class="section-title">Ce qu'ils disent de nous</h2>
+                <div class="section-divider-center"></div>
+            </div>
+            
+            <div class="swiper testimonial-swiper" data-aos="fade-up">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-stars">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">"Une expérience exceptionnelle ! L'équipe de MadaTrip a su créer un voyage sur mesure à la hauteur de nos attentes."</p>
+                            <div class="testimonial-author">
+                                <p class="author-name">Anne Dupré</p>
+                                <p class="author-location">Paris, France</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-stars">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">"Un professionnalisme remarquable et une connaissance parfaite du terrain. Nous reviendrons sans hésiter."</p>
+                            <div class="testimonial-author">
+                                <p class="author-name">Nicolas Fischer</p>
+                                <p class="author-location">Genève, Suisse</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-stars">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">"Le voyage de nos rêves ! Organisation parfaite, guides passionnés. Je recommande les yeux fermés."</p>
+                            <div class="testimonial-author">
+                                <p class="author-name">De Smet</p>
+                                <p class="author-location">Bruxelles, Belgique</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CTA PREMIUM ==================== -->
+    <section class="section-cta-premium">
+        <div class="cta-premium-overlay"></div>
+        <div class="container-custom">
+            <div class="cta-premium-content" data-aos="fade-up">
+                <span class="cta-premium-badge">L'invitation au voyage</span>
+                <h2 class="cta-premium-title">Prêt pour<br>l'aventure <span class="text-rose-hero">malagasy</span> ?</h2>
+                <div class="cta-premium-divider"></div>
+                <p class="cta-premium-text">Laissez nos experts vous guider vers des expériences uniques<br>au cœur de l'île rouge.</p>
+                <div class="cta-premium-buttons">
+                    <a href="booking.html" class="cta-premium-btn-primary">
+                        <span>Planifier mon voyage</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="contact.html" class="cta-premium-btn-outline">
+                        <span>Nous contacter</span>
+                        <i class="fas fa-comment"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+        <div class="container-custom">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <img src="assets/images/madatriplogo.png" alt="Logo" class="footer-logo">
+                    <p class="footer-text">L'expert du voyage d'exception à Madagascar. Créons ensemble votre séjour unique.</p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-title">Liens rapides</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="about.html">À propos</a></li>
+                        <li><a href="circuits.html">Circuits</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="gallery.html">Galerie</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-title">Informations</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Conditions générales</a></li>
+                        <li><a href="#">Politique de confidentialité</a></li>
+                        <li><a href="#">Mentions légales</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-title">Contact</h4>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-map-marker-alt"></i> Antananarivo, Madagascar</li>
+                        <li><i class="fas fa-phone-alt"></i> +261 34 12 345 67</li>
+                        <li><i class="fas fa-envelope"></i> hello@madatrip.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 MadaTrip Planner. Tous droits réservés. Voyagez responsable.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button id="backToTop" class="back-to-top"><i class="fas fa-arrow-up"></i></button>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

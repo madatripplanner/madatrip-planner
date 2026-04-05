@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description" content="Détail du circuit Tsingy & Baobabs - MadaTrip Planner">
+    <meta name="author" content="MadaTrip Planner">
+    <title>Tsingy & Baobabs | MadaTrip Planner</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="font-jakarta bg-white">
+
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Navbar (identique aux autres pages) -->
+    <nav id="navbar" class="fixed w-full z-50">
+        <div class="container mx-auto px-6 lg:px-12">
+            <div class="flex items-center justify-between">
+                <div class="hidden lg:flex space-x-8">
+                    <a href="index.html" class="nav-link">ACCUEIL</a>
+                    <a href="about.html" class="nav-link">À PROPOS</a>
+                    <a href="circuits.html" class="nav-link active">CIRCUITS</a>
+                </div>
+                <a href="index.html" class="logo-link">
+                    <img src="assets/images/madatriplogo.png" alt="MadaTrip Planner" class="logo-navbar">
+                </a>
+                <div class="hidden lg:flex space-x-8">
+                    <a href="services.html" class="nav-link">SERVICES</a>
+                    <a href="gallery.html" class="nav-link">GALERIE</a>
+                    <a href="contact.html" class="nav-link">CONTACT</a>
+                </div>
+                <button id="menuBtn" class="lg:hidden text-dark text-2xl focus:outline-none">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        <div class="nav-border"></div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="mobile-menu fixed inset-0 bg-white z-50 transform -translate-x-full transition-transform duration-500 lg:hidden">
+        <div class="flex justify-end p-6">
+            <button id="closeMenu" class="text-dark text-3xl"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="flex flex-col items-center justify-center h-full space-y-8">
+            <img src="assets/images/madatriplogo.png" alt="Logo" class="h-24 w-auto mb-4">
+            <a href="index.html" class="text-2xl text-dark/80 hover:text-primary transition">Accueil</a>
+            <a href="about.html" class="text-2xl text-dark/80 hover:text-primary transition">À propos</a>
+            <a href="circuits.html" class="text-2xl text-dark/80 hover:text-primary transition">Circuits</a>
+            <a href="services.html" class="text-2xl text-dark/80 hover:text-primary transition">Services</a>
+            <a href="gallery.html" class="text-2xl text-dark/80 hover:text-primary transition">Galerie</a>
+            <a href="contact.html" class="text-2xl text-dark/80 hover:text-primary transition">Contact</a>
+        </div>
+    </div>
+
+    <!-- Circuit Hero -->
+    <section class="circuit-detail-hero">
+        <div class="circuit-detail-overlay"></div>
+        <div class="container-custom">
+            <div class="circuit-detail-header" data-aos="fade-up">
+                <a href="circuits.html" class="back-link"><i class="fas fa-arrow-left"></i> Tous les circuits</a>
+                <h1 class="circuit-detail-title">Tsingy & Baobabs</h1>
+                <div class="circuit-detail-meta">
+                    <span><i class="far fa-clock"></i> 8 jours / 7 nuits</span>
+                    <span><i class="fas fa-map-marker-alt"></i> Ouest de Madagascar</span>
+                    <span><i class="fas fa-chart-line"></i> Niveau : Modéré</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Circuit Content -->
+    <section class="circuit-detail-content">
+        <div class="container-custom">
+            <div class="detail-grid">
+                <div class="detail-main" data-aos="fade-right">
+                    <div class="detail-section">
+                        <h2>À propos du circuit</h2>
+                        <p>Partez à la découverte des paysages les plus emblématiques de Madagascar : les impressionnants Tsingy et la majestueuse allée des baobabs. Ce circuit vous emmène au cœur de l'ouest malgache, une région aux contrastes saisissants où la nature règne en maître.</p>
+                        <p>Vous traverserez des forêts de pierre uniques au monde, observerez des lémuriens dans leur habitat naturel, et assisterez à des couchers de soleil inoubliables parmi les baobabs centenaires.</p>
+                    </div>
+
+                    <div class="detail-section">
+                        <h2>Itinéraire détaillé</h2>
+                        <div class="itinerary-item">
+                            <div class="itinerary-day">
+                                <span class="day-number">J1</span>
+                                <div class="day-content">
+                                    <h3>Arrivée à Antananarivo</h3>
+                                    <p>Accueil à l'aéroport et transfert à votre hôtel. Briefing avec votre guide pour le circuit.</p>
+                                </div>
+                            </div>
+                            <div class="itinerary-day">
+                                <span class="day-number">J2</span>
+                                <div class="day-content">
+                                    <h3>Antananarivo - Morondava</h3>
+                                    <p>Vol vers Morondava. Installation à l'hôtel et détente sur la plage.</p>
+                                </div>
+                            </div>
+                            <div class="itinerary-day">
+                                <span class="day-number">J3</span>
+                                <div class="day-content">
+                                    <h3>Allée des Baobabs</h3>
+                                    <p>Découverte de l'emblématique allée des baobabs au coucher du soleil. Session photo magique.</p>
+                                </div>
+                            </div>
+                            <div class="itinerary-day">
+                                <span class="day-number">J4</span>
+                                <div class="day-content">
+                                    <h3>Route vers Bekopaka</h3>
+                                    <p>Traversée en 4x4 vers les Tsingy. Nuitée en lodge au cœur de la nature.</p>
+                                </div>
+                            </div>
+                            <div class="itinerary-day">
+                                <span class="day-number">J5</span>
+                                <div class="day-content">
+                                    <h3>Exploration des Tsingy</h3>
+                                    <p>Journée complète dans le parc national des Tsingy. Randonnée sur les passerelles suspendues.</p>
+                                </div>
+                            </div>
+                            <div class="itinerary-day">
+                                <span class="day-number">J6</span>
+                                <div class="day-content">
+                                    <h3>Retour à Morondava</h3>
+                                    <p>Retour vers la côte. Après-midi libre et détente.</p>
+                                </div>
+                            </div>
+                            <div class="itinerary-day">
+                                <span class="day-number">J7</span>
+                                <div class="day-content">
+                                    <h3>Morondava - Antananarivo</h3>
+                                    <p>Vol retour vers la capitale. Derniers achats et dîner d'adieu.</p>
+                                </div>
+                            </div>
+                            <div class="itinerary-day">
+                                <span class="day-number">J8</span>
+                                <div class="day-content">
+                                    <h3>Départ</h3>
+                                    <p>Transfert à l'aéroport et vol international.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="detail-section">
+                        <h2>Ce qui est inclus</h2>
+                        <div class="included-grid">
+                            <ul class="included-list">
+                                <li><i class="fas fa-check-circle"></i> Vols domestiques A/R</li>
+                                <li><i class="fas fa-check-circle"></i> Hébergement en lodge/hôtel</li>
+                                <li><i class="fas fa-check-circle"></i> Petits-déjeuners inclus</li>
+                                <li><i class="fas fa-check-circle"></i> Transport en 4x4 privé</li>
+                                <li><i class="fas fa-check-circle"></i> Guide francophone expérimenté</li>
+                                <li><i class="fas fa-check-circle"></i> Entrées des parcs nationaux</li>
+                            </ul>
+                            <ul class="excluded-list">
+                                <li><i class="fas fa-times-circle"></i> Vols internationaux</li>
+                                <li><i class="fas fa-times-circle"></i> Repas non mentionnés</li>
+                                <li><i class="fas fa-times-circle"></i> Boissons et pourboires</li>
+                                <li><i class="fas fa-times-circle"></i> Assurance voyage</li>
+                                <li><i class="fas fa-times-circle"></i> Dépenses personnelles</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="detail-sidebar" data-aos="fade-left">
+                    <div class="price-card">
+                        <div class="price-header">
+                            <span class="price-label">À partir de</span>
+                            <span class="price-value">1 290€</span>
+                            <span class="price-period">par personne</span>
+                        </div>
+                        <div class="price-features">
+                            <p><i class="fas fa-calendar-alt"></i> Départs garantis à partir de 2 personnes</p>
+                            <p><i class="fas fa-tag"></i> Supplément single : 250€</p>
+                        </div>
+                        <a href="booking.html?circuit=tsingy" class="btn-primary btn-block">Réserver ce circuit</a>
+                        <a href="contact.html" class="btn-outline btn-block mt-3">Poser une question</a>
+                    </div>
+
+                    <div class="info-card">
+                        <h3>Bon à savoir</h3>
+                        <ul>
+                            <li><i class="fas fa-thermometer-half"></i> Meilleure période : Avril à Octobre</li>
+                            <li><i class="fas fa-shoe-prints"></i> Chaussures de randonnée recommandées</li>
+                            <li><i class="fas fa-camera"></i> Pensez à votre appareil photo !</li>
+                            <li><i class="fas fa-map"></i> Distance totale : ~800 km</li>
+                        </ul>
+                    </div>
+
+                    <div class="gallery-mini">
+                        <h3>Galerie</h3>
+                        <div class="mini-grid">
+                            <img src="assets/images/tsingycard.jpg" alt="Tsingy">
+                            <img src="assets/images/baobacard.jpg" alt="Baobab">
+                            <img src="assets/images/randocard.jpg" alt="Randonnée">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Circuits similaires -->
+    <section class="similar-circuits">
+        <div class="container-custom">
+            <h2 class="similar-title" data-aos="fade-up">Circuits similaires</h2>
+            <div class="similar-grid">
+                <div class="similar-card" data-aos="fade-up" data-aos-delay="100">
+                    <img src="assets/images/sifakacard.jpg" alt="Trek">
+                    <div class="similar-info">
+                        <h3>Trek & Lémuriens</h3>
+                        <p>6 jours - À partir de 890€</p>
+                        <a href="circuit-details.html?id=2" class="btn-small">Voir</a>
+                    </div>
+                </div>
+                <div class="similar-card" data-aos="fade-up" data-aos-delay="200">
+                    <img src="assets/images/randocard.jpg" alt="Andringitra">
+                    <div class="similar-info">
+                        <h3>Trek Andringitra</h3>
+                        <p>12 jours - À partir de 1 890€</p>
+                        <a href="circuit-details.html?id=4" class="btn-small">Voir</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer identique -->
+    <footer class="footer">
+        <div class="container-custom">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <img src="assets/images/madatriplogo.png" alt="Logo" class="footer-logo">
+                    <p class="footer-text">L'expert du voyage d'exception à Madagascar. Créons ensemble votre séjour unique.</p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-title">Liens rapides</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="about.html">À propos</a></li>
+                        <li><a href="circuits.html">Circuits</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="gallery.html">Galerie</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-title">Informations</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Conditions générales</a></li>
+                        <li><a href="#">Politique de confidentialité</a></li>
+                        <li><a href="#">Mentions légales</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-title">Contact</h4>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-map-marker-alt"></i> Antananarivo, Madagascar</li>
+                        <li><i class="fas fa-phone-alt"></i> +261 34 12 345 67</li>
+                        <li><i class="fas fa-envelope"></i> hello@madatrip.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 MadaTrip Planner. Tous droits réservés. Voyagez responsable.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button id="backToTop" class="back-to-top"><i class="fas fa-arrow-up"></i></button>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

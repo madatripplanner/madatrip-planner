@@ -1,0 +1,47 @@
+<!-- ==================== HEADER / NAVBAR ==================== -->
+<nav id="navbar" class="fixed w-full z-50">
+    <div class="container mx-auto px-6 lg:px-12">
+        <div class="flex items-center justify-between">
+            <!-- Liens gauche -->
+            <div class="hidden lg:flex space-x-8">
+                <a href="index.html" class="nav-link" data-page="index">ACCUEIL</a>
+                <a href="about.html" class="nav-link" data-page="about">À PROPOS</a>
+                <a href="circuits.html" class="nav-link" data-page="circuits">CIRCUITS</a>
+            </div>
+            
+            <!-- Logo centre -->
+            <a href="index.html" class="logo-link">
+                <img src="assets/images/madatriplogo.png" alt="MadaTrip Planner" class="logo-navbar">
+            </a>
+            
+            <!-- Liens droite -->
+            <div class="hidden lg:flex space-x-8">
+                <a href="services.html" class="nav-link" data-page="services">SERVICES</a>
+                <a href="gallery.html" class="nav-link" data-page="gallery">GALERIE</a>
+                <a href="contact.html" class="nav-link" data-page="contact">CONTACT</a>
+            </div>
+            
+            <!-- Bouton menu mobile -->
+            <button id="menuBtn" class="lg:hidden text-dark text-2xl focus:outline-none">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </div>
+    <div class="nav-border"></div>
+</nav>
+
+<!-- Menu Mobile -->
+<div id="mobileMenu" class="mobile-menu fixed inset-0 bg-white z-50 transform -translate-x-full transition-transform duration-500 lg:hidden">
+    <div class="flex justify-end p-6">
+        <button id="closeMenu" class="text-dark text-3xl"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="flex flex-col items-center justify-center h-full space-y-8">
+        <img src="assets/images/madatriplogo.png" alt="Logo" class="h-24 w-auto mb-4">
+        <a href="index.html" class="text-2xl text-dark/80 hover:text-primary transition" data-page="index">Accueil</a>
+        <a href="about.html" class="text-2xl text-dark/80 hover:text-primary transition" data-page="about">À propos</a>
+        <a href="circuits.html" class="text-2xl text-dark/80 hover:text-primary transition" data-page="circuits">Circuits</a>
+        <a href="services.html" class="text-2xl text-dark/80 hover:text-primary transition" data-page="services">Services</a>
+        <a href="gallery.html" class="text-2xl text-dark/80 hover:text-primary transition" data-page="gallery">Galerie</a>
+        <a href="contact.html" class="text-2xl text-dark/80 hover:text-primary transition" data-page="contact">Contact</a>
+    </div>
+</div>

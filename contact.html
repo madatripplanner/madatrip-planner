@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description" content="Contactez MadaTrip Planner - Experts du voyage à Madagascar. Devis gratuit, conseils personnalisés.">
+    <title>Contact | MadaTrip Planner</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="font-jakarta bg-white">
+
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Navbar -->
+    <nav id="navbar" class="fixed w-full z-50">
+        <div class="container mx-auto px-6 lg:px-12">
+            <div class="flex items-center justify-between">
+                <div class="hidden lg:flex space-x-8">
+                    <a href="index.html" class="nav-link">ACCUEIL</a>
+                    <a href="about.html" class="nav-link">À PROPOS</a>
+                    <a href="circuits.html" class="nav-link">CIRCUITS</a>
+                </div>
+                <a href="index.html" class="logo-link">
+                    <img src="assets/images/madatriplogo.png" alt="MadaTrip Planner" class="logo-navbar">
+                </a>
+                <div class="hidden lg:flex space-x-8">
+                    <a href="services.html" class="nav-link">SERVICES</a>
+                    <a href="gallery.html" class="nav-link">GALERIE</a>
+                    <a href="contact.html" class="nav-link active">CONTACT</a>
+                </div>
+                <button id="menuBtn" class="lg:hidden text-dark text-2xl focus:outline-none">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        <div class="nav-border"></div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="mobile-menu fixed inset-0 bg-white z-50 transform -translate-x-full transition-transform duration-500 lg:hidden">
+        <div class="flex justify-end p-6">
+            <button id="closeMenu" class="text-dark text-3xl"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="flex flex-col items-center justify-center h-full space-y-8">
+            <img src="assets/images/madatriplogo.png" alt="Logo" class="h-24 w-auto mb-4">
+            <a href="index.html" class="text-2xl text-dark/80 hover:text-primary transition">Accueil</a>
+            <a href="about.html" class="text-2xl text-dark/80 hover:text-primary transition">À propos</a>
+            <a href="circuits.html" class="text-2xl text-dark/80 hover:text-primary transition">Circuits</a>
+            <a href="services.html" class="text-2xl text-dark/80 hover:text-primary transition">Services</a>
+            <a href="gallery.html" class="text-2xl text-dark/80 hover:text-primary transition">Galerie</a>
+            <a href="contact.html" class="text-2xl text-dark/80 hover:text-primary transition">Contact</a>
+        </div>
+    </div>
+
+    <!-- Hero Section avec effet parallaxe -->
+    <section class="page-hero">
+        <div class="contact-hero-overlay"></div>
+        <div class="contact-hero-content">
+            <div class="container-custom">
+                <div class="hero-premium-inner" data-aos="fade-up">
+                    <span class="hero-premium-badge">Prenez contact</span>
+                    <h1 class="hero-premium-title">Commençons à<br>planifier votre <span class="text-gradient">aventure</span></h1>
+                    <div class="hero-premium-divider"></div>
+                    <p class="hero-premium-text">Notre équipe d'experts est à votre écoute pour créer le voyage de vos rêves</p>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <span>Découvrir</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Section Contact Premium -->
+    <section class="contact-premium-section">
+        <div class="container-custom">
+            <div class="contact-premium-wrapper">
+                <!-- Informations de contact -->
+                <div class="contact-info-premium" data-aos="fade-right">
+                    <div class="info-header">
+                        <span class="info-badge">Nos coordonnées</span>
+                        <h2>Discutons de<br>votre projet</h2>
+                        <p>Que vous ayez une question précise ou besoin d'un devis personnalisé, notre équipe est là pour vous guider.</p>
+                    </div>
+                    
+                    <div class="info-cards">
+                        <div class="info-card-premium">
+                            <div class="info-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="info-details">
+                                <h3>Notre bureau</h3>
+                                <p>Lot II J 170 Bis<br>Antananarivo 101, Madagascar</p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-card-premium">
+                            <div class="info-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div class="info-details">
+                                <h3>Ligne directe</h3>
+                                <p>+261 34 12 345 67</p>
+                                <p class="small">WhatsApp: +261 32 12 345 68</p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-card-premium">
+                            <div class="info-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="info-details">
+                                <h3>Email</h3>
+                                <p>hello@madatrip.com</p>
+                                <p class="small">reservation@madatrip.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-card-premium">
+                            <div class="info-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="info-details">
+                                <h3>Horaires</h3>
+                                <p>Lun-Ven: 9h - 18h</p>
+                                <p class="small">Sam: 10h - 16h</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="social-premium">
+                        <h3>Suivez-nous</h3>
+                        <div class="social-links-premium">
+                            <a href="#" class="social-link-premium"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-link-premium"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-link-premium"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" class="social-link-premium"><i class="fab fa-youtube"></i></a>
+                            <a href="#" class="social-link-premium"><i class="fab fa-tripadvisor"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Formulaire premium -->
+                <div class="contact-form-premium" data-aos="fade-left">
+                    <div class="form-header">
+                        <span class="form-badge">Devis gratuit</span>
+                        <h3>Envoyez-nous un message</h3>
+                        <p>Remplissez le formulaire ci-dessous et nous vous répondrons sous 24h</p>
+                    </div>
+                    
+                    <form id="contactFormPremium" class="premium-form">
+                        <div class="form-row-premium">
+                            <div class="input-group-premium">
+                                <input type="text" id="firstNamePremium" name="firstName" required>
+                                <label for="firstNamePremium">Prénom</label>
+                                <span class="input-border"></span>
+                            </div>
+                            <div class="input-group-premium">
+                                <input type="text" id="lastNamePremium" name="lastName" required>
+                                <label for="lastNamePremium">Nom</label>
+                                <span class="input-border"></span>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row-premium">
+                            <div class="input-group-premium">
+                                <input type="email" id="emailPremium" name="email" required>
+                                <label for="emailPremium">Email</label>
+                                <span class="input-border"></span>
+                            </div>
+                            <div class="input-group-premium">
+                                <input type="tel" id="phonePremium" name="phone" required>
+                                <label for="phonePremium">Téléphone</label>
+                                <span class="input-border"></span>
+                            </div>
+                        </div>
+                        
+                        <div class="input-group-premium full-width">
+                            <select id="subjectPremium" name="subject" required>
+                                <option value="" disabled selected></option>
+                                <option value="devis">Demande de devis personnalisé</option>
+                                <option value="info">Information sur un circuit</option>
+                                <option value="custom">Création de circuit sur mesure</option>
+                                <option value="groupe">Voyage en groupe</option>
+                                <option value="autre">Autre demande</option>
+                            </select>
+                            <label for="subjectPremium">Sujet</label>
+                            <span class="input-border"></span>
+                        </div>
+                        
+                        <div class="input-group-premium full-width">
+                            <textarea id="messagePremium" name="message" rows="5" required></textarea>
+                            <label for="messagePremium">Votre message</label>
+                            <span class="input-border"></span>
+                        </div>
+                        
+                        <div class="form-options">
+                            <label class="checkbox-premium">
+                                <input type="checkbox" id="newsletterPremium">
+                                <span class="checkmark"></span>
+                                <span class="checkbox-text">Je souhaite recevoir les offres et actualités</span>
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn-premium">
+                            <span>Envoyer le message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Carte interactive -->
+    <section class="map-premium-section">
+        <div class="container-custom">
+            <div class="map-premium-wrapper" data-aos="fade-up">
+                <div class="map-header">
+                    <h3>Notre localisation</h3>
+                    <p>Retrouvez-nous à Antananarivo</p>
+                </div>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1m3889.5!2d47.5!3d-18.9!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTjCsDU0JzAwLjAiUyA0N8KwMzAnMDAuMCJF!5e0!3m2!1sfr!2sfr!4v1234567890" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Premium -->
+    <section class="faq-premium-section">
+        <div class="container-custom">
+            <div class="faq-premium-header" data-aos="fade-up">
+                <span class="faq-badge">Questions fréquentes</span>
+                <h2>Vous avez des questions ?</h2>
+                <p>Nous répondons aux interrogations les plus courantes</p>
+            </div>
+            
+            <div class="faq-premium-grid">
+                <div class="faq-premium-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="faq-question-premium">
+                        <h3>Quand est la meilleure période pour voyager à Madagascar ?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer-premium">
+                        <p>La meilleure période s'étend d'avril à octobre, pendant la saison sèche. Les températures sont agréables (20-25°C) et les routes praticables. Pour l'observation des baleines, privilégiez juillet-septembre. Évitez la saison des pluies (décembre-mars) pour les circuits dans l'ouest et le sud.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-premium-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="faq-question-premium">
+                        <h3>Faut-il un visa pour Madagascar ?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer-premium">
+                        <p>Oui, un visa est obligatoire pour la plupart des nationalités. Il peut être obtenu à l'arrivée à l'aéroport d'Antananarivo : 35€ pour 30 jours, 40€ pour 60 jours. Nous vous conseillons de vérifier les conditions selon votre pays avant le départ.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-premium-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="faq-question-premium">
+                        <h3>Quels sont les vaccins recommandés ?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer-premium">
+                        <p>Les vaccins recommandés sont : DTP (Diphtérie, Tétanos, Polio), Fièvre jaune (obligatoire si provenance de zone endémique), Hépatite A et B, Typhoïde. Un traitement antipaludéen est également conseillé pour certaines régions. Consultez votre médecin au moins 2 mois avant le départ.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-premium-item" data-aos="fade-up" data-aos-delay="400">
+                    <div class="faq-question-premium">
+                        <h3>Quel est le niveau de langue à Madagascar ?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer-premium">
+                        <p>Le français est largement parlé à Madagascar, surtout dans les villes, les zones touristiques et l'administration. Le malgache est la langue nationale. Nos guides sont tous francophones et certains parlent également anglais.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-premium-item" data-aos="fade-up" data-aos-delay="500">
+                    <div class="faq-question-premium">
+                        <h3>Comment se déroule le paiement ?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer-premium">
+                        <p>Un acompte de 30% est demandé à la réservation pour confirmer votre voyage. Le solde est à régler 30 jours avant le départ. Nous acceptons les paiements par carte bancaire, virement et PayPal. Toutes les transactions sont sécurisées.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-premium-item" data-aos="fade-up" data-aos-delay="600">
+                    <div class="faq-question-premium">
+                        <h3>Quelle est votre politique d'annulation ?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer-premium">
+                        <p>Nous proposons une annulation flexible : remboursement intégral jusqu'à 60 jours avant le départ, 50% jusqu'à 30 jours, et aucun remboursement moins de 30 jours avant le départ. Une assurance annulation est fortement recommandée.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container-custom">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <img src="assets/images/madatriplogo.png" alt="Logo" class="footer-logo">
+                    <p class="footer-text">L'expert du voyage d'exception à Madagascar. Créons ensemble votre séjour unique.</p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-title">Liens rapides</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="about.html">À propos</a></li>
+                        <li><a href="circuits.html">Circuits</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="gallery.html">Galerie</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-title">Informations</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Conditions générales</a></li>
+                        <li><a href="#">Politique de confidentialité</a></li>
+                        <li><a href="#">Mentions légales</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-title">Contact</h4>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-map-marker-alt"></i> Antananarivo, Madagascar</li>
+                        <li><i class="fas fa-phone-alt"></i> +261 34 12 345 67</li>
+                        <li><i class="fas fa-envelope"></i> hello@madatrip.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 MadaTrip Planner. Tous droits réservés. Voyagez responsable.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button id="backToTop" class="back-to-top"><i class="fas fa-arrow-up"></i></button>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

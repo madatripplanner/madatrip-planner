@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description" content="Galerie photos - Madagascar à couper le souffle. Paysages, lémuriens, plages paradisiaques.">
+    <title>Galerie | MadaTrip Planner</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="font-jakarta bg-white">
+
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Navbar identique -->
+    <nav id="navbar" class="fixed w-full z-50">
+        <div class="container mx-auto px-6 lg:px-12">
+            <div class="flex items-center justify-between">
+                <div class="hidden lg:flex space-x-8">
+                    <a href="index.html" class="nav-link">ACCUEIL</a>
+                    <a href="about.html" class="nav-link">À PROPOS</a>
+                    <a href="circuits.html" class="nav-link">CIRCUITS</a>
+                </div>
+                <a href="index.html" class="logo-link">
+                    <img src="assets/images/madatriplogo.png" alt="MadaTrip Planner" class="logo-navbar">
+                </a>
+                <div class="hidden lg:flex space-x-8">
+                    <a href="services.html" class="nav-link">SERVICES</a>
+                    <a href="gallery.html" class="nav-link active">GALERIE</a>
+                    <a href="contact.html" class="nav-link">CONTACT</a>
+                </div>
+                <button id="menuBtn" class="lg:hidden text-dark text-2xl focus:outline-none">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        <div class="nav-border"></div>
+    </nav>
+
+    <!-- Mobile Menu identique -->
+    <div id="mobileMenu" class="mobile-menu fixed inset-0 bg-white z-50 transform -translate-x-full transition-transform duration-500 lg:hidden">
+        <div class="flex justify-end p-6">
+            <button id="closeMenu" class="text-dark text-3xl"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="flex flex-col items-center justify-center h-full space-y-8">
+            <img src="assets/images/madatriplogo.png" alt="Logo" class="h-24 w-auto mb-4">
+            <a href="index.html" class="text-2xl text-dark/80 hover:text-primary transition">Accueil</a>
+            <a href="about.html" class="text-2xl text-dark/80 hover:text-primary transition">À propos</a>
+            <a href="circuits.html" class="text-2xl text-dark/80 hover:text-primary transition">Circuits</a>
+            <a href="services.html" class="text-2xl text-dark/80 hover:text-primary transition">Services</a>
+            <a href="gallery.html" class="text-2xl text-dark/80 hover:text-primary transition">Galerie</a>
+            <a href="contact.html" class="text-2xl text-dark/80 hover:text-primary transition">Contact</a>
+        </div>
+    </div>
+
+    <!-- Hero -->
+    <section class="page-hero gallery-hero">
+        <div class="page-hero-container">
+            <h1 class="page-hero-title" data-aos="fade-up">Galerie</h1>
+            <div class="page-hero-divider" data-aos="fade-up" data-aos-delay="100"></div>
+            <p class="page-hero-subtitle" data-aos="fade-up" data-aos-delay="200">Un aperçu des merveilles de Madagascar</p>
+        </div>
+    </section>
+
+    <!-- Filtres -->
+    <section class="gallery-filters">
+        <div class="container-custom">
+            <div class="filter-buttons" data-aos="fade-up">
+                <button class="filter-btn active" data-filter="all">Tous</button>
+                <button class="filter-btn" data-filter="paysages">Paysages</button>
+                <button class="filter-btn" data-filter="faune">Faune</button>
+                <button class="filter-btn" data-filter="culture">Culture</button>
+                <button class="filter-btn" data-filter="aventure">Aventure</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Grille Galerie -->
+    <section class="gallery-grid-section mb-16">
+        <div class="container-custom">
+            <div class="gallery-masonry" id="galleryGrid">
+                <!-- Photos - À remplacer par vos vraies images -->
+                <div class="gallery-item" data-category="paysages" data-aos="fade-up">
+                    <img src="assets/images/tsingycard2.jpg" alt="Tsingy">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                        <p>Tsingy de Bemaraha</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="faune" data-aos="fade-up" data-aos-delay="100">
+                    <img src="assets/images/sifakacard.jpg" alt="Lémurien">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                        <p>Lémurien catta</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="paysages" data-aos="fade-up" data-aos-delay="200">
+                    <img src="assets/images/baobacard.jpg" alt="Baobabs">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                        <p>Allée des baobabs</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="culture" data-aos="fade-up" data-aos-delay="300">
+                    <img src="assets/images/artcard.jpg" alt="Artisanat">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                        <p>Artisanat malgache</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="aventure" data-aos="fade-up" data-aos-delay="400">
+                    <img src="assets/images/randocard.jpg" alt="Randonnée">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                        <p>Trekking à Andringitra</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="faune" data-aos="fade-up" data-aos-delay="500">
+                    <img src="assets/images/cameleoncard.jpg" alt="Caméléon">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                        <p>Caméléon panthère</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="paysages" data-aos="fade-up" data-aos-delay="600">
+                    <img src="assets/images/principale.jpg" alt="Plage">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                        <p>Plage de Nosy Be</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="culture" data-aos="fade-up" data-aos-delay="700">
+                    <img src="assets/images/antsiranana.jpg" alt="Marché">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                        <p>Marché traditionnel</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container-custom">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <img src="assets/images/madatriplogo.png" alt="Logo" class="footer-logo">
+                    <p class="footer-text">L'expert du voyage d'exception à Madagascar. Créons ensemble votre séjour unique.</p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-title">Liens rapides</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="about.html">À propos</a></li>
+                        <li><a href="circuits.html">Circuits</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="gallery.html">Galerie</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-title">Informations</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Conditions générales</a></li>
+                        <li><a href="#">Politique de confidentialité</a></li>
+                        <li><a href="#">Mentions légales</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-title">Contact</h4>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-map-marker-alt"></i> Antananarivo, Madagascar</li>
+                        <li><i class="fas fa-phone-alt"></i> +261 34 12 345 67</li>
+                        <li><i class="fas fa-envelope"></i> hello@madatrip.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 MadaTrip Planner. Tous droits réservés. Voyagez responsable.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button id="backToTop" class="back-to-top"><i class="fas fa-arrow-up"></i></button>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

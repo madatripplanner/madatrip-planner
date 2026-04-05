@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description" content="Découvrez l'histoire et l'équipe de MadaTrip Planner - Experts du voyage sur mesure à Madagascar.">
+    <meta name="keywords" content="Madagascar, voyage luxe, à propos, MadaTrip, équipe">
+    <meta name="author" content="MadaTrip Planner">
+    <title>À propos | MadaTrip Planner - Voyages d'exception à Madagascar</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="font-jakarta bg-white">
+
+    <!-- Scroll Progress -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- ==================== NAVBAR ==================== -->
+    <nav id="navbar" class="fixed w-full z-50">
+        <div class="container mx-auto px-6 lg:px-12">
+            <div class="flex items-center justify-between">
+                <div class="hidden lg:flex space-x-8">
+                    <a href="index.html" class="nav-link">ACCUEIL</a>
+                    <a href="about.html" class="nav-link active">À PROPOS</a>
+                    <a href="circuits.html" class="nav-link">CIRCUITS</a>
+                </div>
+                
+                <a href="index.html" class="logo-link">
+                    <img src="assets/images/madatriplogo.png" alt="MadaTrip Planner" class="logo-navbar">
+                </a>
+                
+                <div class="hidden lg:flex space-x-8">
+                    <a href="services.html" class="nav-link">SERVICES</a>
+                    <a href="gallery.html" class="nav-link">GALERIE</a>
+                    <a href="contact.html" class="nav-link">CONTACT</a>
+                </div>
+                
+                <button id="menuBtn" class="lg:hidden text-dark text-2xl focus:outline-none">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        <div class="nav-border"></div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="mobile-menu fixed inset-0 bg-white z-50 transform -translate-x-full transition-transform duration-500 lg:hidden">
+        <div class="flex justify-end p-6">
+            <button id="closeMenu" class="text-dark text-3xl"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="flex flex-col items-center justify-center h-full space-y-8">
+            <img src="assets/images/madatriplogo.png" alt="Logo" class="h-24 w-auto mb-4">
+            <a href="index.html" class="text-2xl text-dark/80 hover:text-primary transition">Accueil</a>
+            <a href="about.html" class="text-2xl text-dark/80 hover:text-primary transition">À propos</a>
+            <a href="circuits.html" class="text-2xl text-dark/80 hover:text-primary transition">Circuits</a>
+            <a href="services.html" class="text-2xl text-dark/80 hover:text-primary transition">Services</a>
+            <a href="gallery.html" class="text-2xl text-dark/80 hover:text-primary transition">Galerie</a>
+            <a href="contact.html" class="text-2xl text-dark/80 hover:text-primary transition">Contact</a>
+        </div>
+    </div>
+
+    <!-- ==================== PAGE HERO ==================== -->
+    <section class="page-hero">
+        <div class="page-hero-container">
+            <h1 class="page-hero-title" data-aos="fade-up">Notre histoire</h1>
+            <div class="page-hero-divider" data-aos="fade-up" data-aos-delay="100"></div>
+            <p class="page-hero-subtitle" data-aos="fade-up" data-aos-delay="200">Une passion partagée pour l'Île Rouge</p>
+        </div>
+    </section>
+
+    <!-- ==================== NOTRE HISTOIRE ==================== -->
+    <section class="section-story">
+        <div class="container-custom">
+            <div class="story-grid">
+                <div class="story-content" data-aos="fade-right">
+                    <span class="section-badge">Depuis 2010</span>
+                    <h2 class="section-title">L'aventure MadaTrip</h2>
+                    <div class="section-divider"></div>
+                    <p class="section-text">Née d'une passion dévorante pour Madagascar, MadaTrip Planner est bien plus qu'une agence de voyage. C'est la concrétisation d'un rêve : faire découvrir l'âme véritable de l'Île Rouge à des voyageurs en quête d'authenticité.</p>
+                    <p class="section-text">Notre fondateur, passionné de randonnée et de photographie, a parcouru l'île pendant des années avant de décider de partager ces trésors cachés. Aujourd'hui, notre équipe de 15 experts locaux perpétue cette vision : des voyages responsables qui respectent l'environnement et les communautés locales.</p>
+                    <div class="story-stats">
+                        <div class="stat-item">
+                            <span class="stat-number counter" data-target="15">0</span>
+                            <span class="stat-label">Experts locaux</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number counter" data-target="500">0</span>
+                            <span class="stat-label">Voyageurs satisfaits</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number counter" data-target="25">0</span>
+                            <span class="stat-label">Destinations</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="story-image" data-aos="fade-left">
+                    <img src="assets/images/team.jpg" alt="Notre équipe">
+                    <div class="story-image-decoration"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== NOS VALEURS ==================== -->
+    <section class="section-values">
+        <div class="container-custom">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-badge">Notre philosophie</span>
+                <h2 class="section-title">Nos valeurs fondamentales</h2>
+                <div class="section-divider-center"></div>
+            </div>
+            
+            <div class="values-grid">
+                <div class="value-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="value-icon"><i class="fas fa-heart"></i></div>
+                    <h3 class="value-title">Passion</h3>
+                    <p class="value-text">Nous vivons et respirons Madagascar. Chaque membre de notre équipe est un véritable ambassadeur de l'île.</p>
+                </div>
+                <div class="value-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="value-icon"><i class="fas fa-leaf"></i></div>
+                    <h3 class="value-title">Responsabilité</h3>
+                    <p class="value-text">Nous nous engageons pour un tourisme durable qui préserve la biodiversité unique de Madagascar.</p>
+                </div>
+                <div class="value-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="value-icon"><i class="fas fa-hand-sparkles"></i></div>
+                    <h3 class="value-title">Excellence</h3>
+                    <p class="value-text">Une attention méticuleuse aux détails pour des expériences de voyage exceptionnelles.</p>
+                </div>
+                <div class="value-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="value-icon"><i class="fas fa-users"></i></div>
+                    <h3 class="value-title">Communauté</h3>
+                    <p class="value-text">Nous travaillons main dans la main avec les communautés locales pour un développement équitable.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== NOTRE ÉQUIPE ==================== -->
+    <section class="section-team">
+        <div class="container-custom">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-badge">Les experts</span>
+                <h2 class="section-title">Rencontrez notre équipe</h2>
+                <div class="section-divider-center"></div>
+            </div>
+            
+            <div class="team-grid">
+                <div class="team-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="team-image">
+                        <img src="assets/images/team_1.jpg" alt="Mialisoa">
+                        <div class="team-social">
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3 class="team-name">Rija Rakotonirainy</h3>
+                        <p class="team-role">Fondateur & CEO</p>
+                        <p class="team-bio">Passionné de randonnée et de photographie, il a exploré chaque recoin de Madagascar.</p>
+                    </div>
+                </div>
+                
+                <div class="team-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="team-image">
+                        <img src="assets/images/team_2.jpg" alt="Sophie">
+                        <div class="team-social">
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3 class="team-name">Mialy Raharisoa</h3>
+                        <p class="team-role">Directrice des opérations</p>
+                        <p class="team-bio">Experte en logistique, elle assure des voyages sans accroc.</p>
+                    </div>
+                </div>
+                
+                <div class="team-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="team-image">
+                        <img src="assets/images/team_3.jpg" alt="Haja">
+                        <div class="team-social">
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3 class="team-name">Hajatiana Randrianantenaina</h3>
+                        <p class="team-role">Guide expert</p>
+                        <p class="team-bio">Spécialiste de la faune et flore, il connaît les meilleurs spots d'observation.</p>
+                    </div>
+                </div>
+                
+                <div class="team-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="team-image">
+                        <img src="assets/images/team_4.jpg" alt="Claire">
+                        <div class="team-social">
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3 class="team-name">Ranto Andriamaharo</h3>
+                        <p class="team-role">Conseiller voyages</p>
+                        <p class="team-bio">À l'écoute de vos envies pour créer le voyage parfait.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== ENGAGEMENTS ==================== -->
+    <section class="section-commitments">
+        <div class="container-custom">
+            <div class="commitments-grid">
+                <div class="commitment-content" data-aos="fade-right">
+                    <span class="section-badge-white">Notre engagement</span>
+                    <h2 class="commitment-title">Voyager responsable</h2>
+                    <div class="commitment-divider"></div>
+                    <p class="commitment-text">Chez MadaTrip Planner, nous croyons que le voyage peut être une force positive. Nous nous engageons à :</p>
+                    <ul class="commitment-list">
+                        <li><i class="fas fa-check-circle"></i> Réduire notre empreinte carbone</li>
+                        <li><i class="fas fa-check-circle"></i> Soutenir l'économie locale</li>
+                        <li><i class="fas fa-check-circle"></i> Protéger la biodiversité</li>
+                        <li><i class="fas fa-check-circle"></i> Éduquer nos voyageurs</li>
+                    </ul>
+                </div>
+                <div class="commitment-image" data-aos="fade-left">
+                    <img src="assets/images/commitment.jpg" alt="Engagement responsable">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CTA ==================== -->
+    <section class="section-cta">
+        <div class="container-custom">
+            <div class="cta-content" data-aos="fade-up">
+                <h2 class="cta-title">Prêt à vivre l'aventure ?</h2>
+                <p class="cta-text">Rejoignez les voyageurs qui nous font confiance pour découvrir Madagascar autrement.</p>
+                <a href="booking.html" class="btn-primary btn-large">Planifier mon voyage</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+        <div class="container-custom">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <img src="assets/images/madatriplogo.png" alt="Logo" class="footer-logo">
+                    <p class="footer-text">L'expert du voyage d'exception à Madagascar. Créons ensemble votre séjour unique.</p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-title">Liens rapides</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="about.html">À propos</a></li>
+                        <li><a href="circuits.html">Circuits</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="gallery.html">Galerie</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-title">Informations</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Conditions générales</a></li>
+                        <li><a href="#">Politique de confidentialité</a></li>
+                        <li><a href="#">Mentions légales</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-title">Contact</h4>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-map-marker-alt"></i> Antananarivo, Madagascar</li>
+                        <li><i class="fas fa-phone-alt"></i> +261 34 12 345 67</li>
+                        <li><i class="fas fa-envelope"></i> hello@madatrip.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 MadaTrip Planner. Tous droits réservés. Voyagez responsable.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button id="backToTop" class="back-to-top"><i class="fas fa-arrow-up"></i></button>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

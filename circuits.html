@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description" content="Découvrez nos circuits sur mesure à Madagascar - Tsingy, lémuriens, plages paradisiaques.">
+    <meta name="keywords" content="Madagascar, circuits, voyages, Tsingy, Nosy Be, trek">
+    <meta name="author" content="MadaTrip Planner">
+    <title>Nos circuits | MadaTrip Planner - Voyages d'exception à Madagascar</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="font-jakarta bg-white">
+
+    <!-- Scroll Progress -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- ==================== NAVBAR ==================== -->
+    <nav id="navbar" class="fixed w-full z-50">
+        <div class="container mx-auto px-6 lg:px-12">
+            <div class="flex items-center justify-between">
+                <div class="hidden lg:flex space-x-8">
+                    <a href="index.html" class="nav-link">ACCUEIL</a>
+                    <a href="about.html" class="nav-link">À PROPOS</a>
+                    <a href="circuits.html" class="nav-link active">CIRCUITS</a>
+                </div>
+                
+                <a href="index.html" class="logo-link">
+                    <img src="assets/images/madatriplogo.png" alt="MadaTrip Planner" class="logo-navbar">
+                </a>
+                
+                <div class="hidden lg:flex space-x-8">
+                    <a href="services.html" class="nav-link">SERVICES</a>
+                    <a href="gallery.html" class="nav-link">GALERIE</a>
+                    <a href="contact.html" class="nav-link">CONTACT</a>
+                </div>
+                
+                <button id="menuBtn" class="lg:hidden text-dark text-2xl focus:outline-none">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        <div class="nav-border"></div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="mobile-menu fixed inset-0 bg-white z-50 transform -translate-x-full transition-transform duration-500 lg:hidden">
+        <div class="flex justify-end p-6">
+            <button id="closeMenu" class="text-dark text-3xl"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="flex flex-col items-center justify-center h-full space-y-8">
+            <img src="assets/images/madatriplogo.png" alt="Logo" class="h-24 w-auto mb-4">
+            <a href="index.html" class="text-2xl text-dark/80 hover:text-primary transition">Accueil</a>
+            <a href="about.html" class="text-2xl text-dark/80 hover:text-primary transition">À propos</a>
+            <a href="circuits.html" class="text-2xl text-dark/80 hover:text-primary transition">Circuits</a>
+            <a href="services.html" class="text-2xl text-dark/80 hover:text-primary transition">Services</a>
+            <a href="gallery.html" class="text-2xl text-dark/80 hover:text-primary transition">Galerie</a>
+            <a href="contact.html" class="text-2xl text-dark/80 hover:text-primary transition">Contact</a>
+        </div>
+    </div>
+
+    <!-- ==================== PAGE HERO ==================== -->
+    <section class="page-hero circuits-hero">
+        <div class="page-hero-container">
+            <h1 class="page-hero-title" data-aos="fade-up">Nos circuits</h1>
+            <div class="page-hero-divider" data-aos="fade-up" data-aos-delay="100"></div>
+            <p class="page-hero-subtitle" data-aos="fade-up" data-aos-delay="200">Des itinéraires uniques pour explorer l'Île Rouge</p>
+        </div>
+    </section>
+
+    <!-- ==================== FILTRES ==================== -->
+    <section class="section-filters">
+        <div class="container-custom">
+            <div class="filters-wrapper" data-aos="fade-up">
+                <button class="filter-btn active" data-filter="all">Tous</button>
+                <button class="filter-btn" data-filter="aventure">Aventure</button>
+                <button class="filter-btn" data-filter="nature">Nature</button>
+                <button class="filter-btn" data-filter="plage">Plage & Détente</button>
+                <button class="filter-btn" data-filter="culture">Culture</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CIRCUITS GRID ==================== -->
+    <section class="section-all-circuits">
+        <div class="container-custom">
+            <div class="circuits-grid-full" id="circuitsGrid">
+                <!-- Circuit 1 - Image à gauche -->
+                <div class="circuit-card-full image-left" data-category="aventure" data-aos="fade-up" data-aos-delay="100">
+                    <div class="circuit-image-full">
+                        <img src="assets/images/tsingycard.jpg" alt="Tsingy">
+                        <div class="circuit-badge">Populaire</div>
+                    </div>
+                    <div class="circuit-info-full">
+                        <div class="circuit-header">
+                            <h3 class="circuit-title-full">Tsingy & Baobabs</h3>
+                            <div class="circuit-duration-full">
+                                <i class="far fa-clock"></i> 8 jours / 7 nuits
+                            </div>
+                        </div>
+                        <p class="circuit-description-full">Exploration des formations calcaires uniques des Tsingy et de l'emblématique allée des baobabs. Un voyage au cœur des paysages les plus spectaculaires de Madagascar.</p>
+                        <div class="circuit-features">
+                            <span><i class="fas fa-hiking"></i> Randonnée</span>
+                            <span><i class="fas fa-camera"></i> Photo</span>
+                            <span><i class="fas fa-utensils"></i> Demi-pension</span>
+                        </div>
+                        <div class="circuit-footer">
+                            <div class="circuit-price-full">
+                                <span class="price-label">À partir de</span>
+                                <span class="price-value">1 290€</span>
+                                <span class="price-period">/ pers.</span>
+                            </div>
+                            <a href="circuit-details.html?id=1" class="btn-circuit-full">Découvrir <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Circuit 2 - Image à droite -->
+                <div class="circuit-card-full image-right" data-category="nature" data-aos="fade-up" data-aos-delay="200">
+                    <div class="circuit-info-full">
+                        <div class="circuit-header">
+                            <h3 class="circuit-title-full">Trek & Lémuriens</h3>
+                            <div class="circuit-duration-full">
+                                <i class="far fa-clock"></i> 6 jours / 5 nuits
+                            </div>
+                        </div>
+                        <p class="circuit-description-full">Randonnée immersive dans le parc national de Ranomafana à la rencontre des lémuriens. Nuitée en lodge écologique au cœur de la forêt tropicale.</p>
+                        <div class="circuit-features">
+                            <span><i class="fas fa-paw"></i> Observation faune</span>
+                            <span><i class="fas fa-tree"></i> Forêt tropicale</span>
+                            <span><i class="fas fa-campground"></i> Écolodge</span>
+                        </div>
+                        <div class="circuit-footer">
+                            <div class="circuit-price-full">
+                                <span class="price-label">À partir de</span>
+                                <span class="price-value">890€</span>
+                                <span class="price-period">/ pers.</span>
+                            </div>
+                            <a href="circuit-details.html?id=2" class="btn-circuit-full">Découvrir <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="circuit-image-full">
+                        <img src="assets/images/sifakacard.jpg" alt="Trek">
+                        <div class="circuit-badge">Nouveau</div>
+                    </div>
+                </div>
+
+                <!-- Circuit 3 - Image à gauche -->
+                <div class="circuit-card-full image-left" data-category="plage" data-aos="fade-up" data-aos-delay="300">
+                    <div class="circuit-image-full">
+                        <img src="assets/images/plagecard2.jpg" alt="Nosy Be">
+                        <div class="circuit-badge">Luxe</div>
+                    </div>
+                    <div class="circuit-info-full">
+                        <div class="circuit-header">
+                            <h3 class="circuit-title-full">Nosy Be & Îles</h3>
+                            <div class="circuit-duration-full">
+                                <i class="far fa-clock"></i> 10 jours / 9 nuits
+                            </div>
+                        </div>
+                        <p class="circuit-description-full">Séjour balnéaire de luxe dans l'archipel de Nosy Be. Plages paradisiaques, snorkeling, et découverte des îles aux tortues et de Nosy Komba.</p>
+                        <div class="circuit-features">
+                            <span><i class="fas fa-swimmer"></i> Snorkeling</span>
+                            <span><i class="fas fa-umbrella-beach"></i> Plage privée</span>
+                            <span><i class="fas fa-spa"></i> Spa inclus</span>
+                        </div>
+                        <div class="circuit-footer">
+                            <div class="circuit-price-full">
+                                <span class="price-label">À partir de</span>
+                                <span class="price-value">1 490€</span>
+                                <span class="price-period">/ pers.</span>
+                            </div>
+                            <a href="circuit-details.html?id=3" class="btn-circuit-full">Découvrir <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Circuit 4 - Image à droite -->
+                <div class="circuit-card-full image-right" data-category="aventure" data-aos="fade-up" data-aos-delay="400">
+                    <div class="circuit-info-full">
+                        <div class="circuit-header">
+                            <h3 class="circuit-title-full">Trek Andringitra</h3>
+                            <div class="circuit-duration-full">
+                                <i class="far fa-clock"></i> 12 jours / 11 nuits
+                            </div>
+                        </div>
+                        <p class="circuit-description-full">Expédition au cœur du massif d'Andringitra, avec l'ascension du Pic Boby (2658m). Pour randonneurs confirmés en quête de défis.</p>
+                        <div class="circuit-features">
+                            <span><i class="fas fa-mountain"></i> Haute montagne</span>
+                            <span><i class="fas fa-tent"></i> Bivouac</span>
+                            <span><i class="fas fa-chart-line"></i> Niveau expert</span>
+                        </div>
+                        <div class="circuit-footer">
+                            <div class="circuit-price-full">
+                                <span class="price-label">À partir de</span>
+                                <span class="price-value">1 890€</span>
+                                <span class="price-period">/ pers.</span>
+                            </div>
+                            <a href="circuit-details.html?id=4" class="btn-circuit-full">Découvrir <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="circuit-image-full">
+                        <img src="assets/images/randocard.jpg" alt="Andringitra">
+                        <div class="circuit-badge">Sportif</div>
+                    </div>
+                </div>
+
+                <!-- Circuit 5 - Image à gauche -->
+                <div class="circuit-card-full image-left" data-category="culture" data-aos="fade-up" data-aos-delay="500">
+                    <div class="circuit-image-full">
+                        <img src="assets/images/artcard.jpg" alt="Côte Est">
+                        <div class="circuit-badge">Culturel</div>
+                    </div>
+                    <div class="circuit-info-full">
+                        <div class="circuit-header">
+                            <h3 class="circuit-title-full">Côte Est & Traditions</h3>
+                            <div class="circuit-duration-full">
+                                <i class="far fa-clock"></i> 9 jours / 8 nuits
+                            </div>
+                        </div>
+                        <p class="circuit-description-full">Immersion dans la culture malgache à travers les marchés, villages traditionnels et ateliers d'artisanat. Rencontres authentiques garanties.</p>
+                        <div class="circuit-features">
+                            <span><i class="fas fa-hand-sparkles"></i> Artisanat</span>
+                            <span><i class="fas fa-drum"></i> Musique locale</span>
+                            <span><i class="fas fa-people-arrows"></i> Rencontres</span>
+                        </div>
+                        <div class="circuit-footer">
+                            <div class="circuit-price-full">
+                                <span class="price-label">À partir de</span>
+                                <span class="price-value">1 050€</span>
+                                <span class="price-period">/ pers.</span>
+                            </div>
+                            <a href="circuit-details.html?id=5" class="btn-circuit-full">Découvrir <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Circuit 6 - Image à droite -->
+                <div class="circuit-card-full image-right" data-category="nature" data-aos="fade-up" data-aos-delay="600">
+                    <div class="circuit-info-full">
+                        <div class="circuit-header">
+                            <h3 class="circuit-title-full">Observation des Baleines</h3>
+                            <div class="circuit-duration-full">
+                                <i class="far fa-clock"></i> 5 jours / 4 nuits
+                            </div>
+                        </div>
+                        <p class="circuit-description-full">De juillet à septembre, assistez au spectacle grandiose des baleines à bosse dans le canal de Mozambique. Excursions en bateau et plages préservées.</p>
+                        <div class="circuit-features">
+                            <span><i class="fas fa-water"></i> Excursion bateau</span>
+                            <span><i class="fas fa-binoculars"></i> Observation</span>
+                            <span><i class="fas fa-calendar-alt"></i> Juil-Sept</span>
+                        </div>
+                        <div class="circuit-footer">
+                            <div class="circuit-price-full">
+                                <span class="price-label">À partir de</span>
+                                <span class="price-value">750€</span>
+                                <span class="price-period">/ pers.</span>
+                            </div>
+                            <a href="circuit-details.html?id=6" class="btn-circuit-full">Découvrir <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="circuit-image-full">
+                        <img src="assets/images/walecard.jpg" alt="Baleines">
+                        <div class="circuit-badge">Saisonnier</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CONSEILS ==================== -->
+    <section class="section-tips">
+        <div class="container-custom">
+            <div class="tips-content" data-aos="fade-up">
+                <div class="tips-icon">
+                    <i class="fas fa-lightbulb"></i>
+                </div>
+                <h3 class="tips-title">Besoin d'un circuit sur mesure ?</h3>
+                <p class="tips-text">Nos experts créent l'itinéraire parfait selon vos envies, votre budget et votre rythme.</p>
+                <a href="booking.html" class="btn-primary">Demander un devis personnalisé</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+        <div class="container-custom">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <img src="assets/images/madatriplogo.png" alt="Logo" class="footer-logo">
+                    <p class="footer-text">L'expert du voyage d'exception à Madagascar. Créons ensemble votre séjour unique.</p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-title">Liens rapides</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="about.html">À propos</a></li>
+                        <li><a href="circuits.html">Circuits</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="gallery.html">Galerie</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-title">Informations</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Conditions générales</a></li>
+                        <li><a href="#">Politique de confidentialité</a></li>
+                        <li><a href="#">Mentions légales</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-title">Contact</h4>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-map-marker-alt"></i> Antananarivo, Madagascar</li>
+                        <li><i class="fas fa-phone-alt"></i> +261 34 12 345 67</li>
+                        <li><i class="fas fa-envelope"></i> hello@madatrip.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 MadaTrip Planner. Tous droits réservés. Voyagez responsable.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button id="backToTop" class="back-to-top"><i class="fas fa-arrow-up"></i></button>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
