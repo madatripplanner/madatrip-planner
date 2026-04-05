@@ -24,6 +24,27 @@
     
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <script>
+    // Fix menu mobile immédiat
+    document.addEventListener('DOMContentLoaded', function() {
+        setTimeout(function() {
+            var btn = document.getElementById('menuBtn');
+            var menu = document.getElementById('mobileMenu');
+            var close = document.getElementById('closeMenu');
+            
+            if (btn && menu) {
+                btn.onclick = function() { 
+                    menu.style.transform = 'translateX(0)';
+                    document.body.style.overflow = 'hidden';
+                };
+                if (close) close.onclick = function() { 
+                    menu.style.transform = 'translateX(-100%)';
+                    document.body.style.overflow = '';
+                };
+            }
+        }, 100);
+    });
+    </script>
 </head>
 <body class="font-jakarta bg-white">
 
